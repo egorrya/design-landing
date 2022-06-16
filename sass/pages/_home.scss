@@ -1,0 +1,121 @@
+.home {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 78vh;
+  left: 0;
+  top: 50%;
+
+  @include respond(tab-land) {
+    padding-left: 4.8rem;
+  }
+
+  @include respond(desk) {
+    padding-left: 0rem;
+  }
+
+  @include respond(phone-land) {
+    // @include respond(tab-port) {
+    height: 69vh;
+  }
+
+  &__title {
+    font-size: 7.3vw;
+    line-height: 1;
+    font-weight: 400;
+    opacity: 0.85;
+
+    margin-bottom: 2.4rem;
+
+    @include respond(phone-big) {
+      font-size: 5.3vw;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.35rem;
+
+      padding-left: 5rem;
+      padding-right: 5rem;
+      margin-bottom: 1.6rem;
+    }
+
+    @include respond(tab-land) {
+      font-size: 3.35rem;
+      max-width: 80%;
+
+      margin-bottom: 2.1rem;
+    }
+
+    @include respond(desk) {
+      max-width: 60% !important;
+
+      font-size: 3rem;
+      max-width: 80%;
+
+      margin-bottom: 2rem;
+    }
+
+    @include respond(phone-land) {
+      // @include respond(tab-port) {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      font-size: 2.85rem;
+      max-width: 80%;
+
+      margin-bottom: 2rem;
+    }
+
+    animation: fadeInLeft 0.3s;
+  }
+
+  &__button-container {
+    opacity: 0;
+    animation-name: fadeInLeft;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.15s;
+  }
+
+  &__button {
+    @include link;
+
+    display: inline-block;
+
+    font-size: 8vw;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: 0.1px;
+    margin-bottom: 5rem;
+
+    @include respond(phone-big) {
+      font-size: 6vw;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.3rem;
+
+      padding-left: 5rem;
+      padding-right: 5rem;
+      letter-spacing: -1px;
+    }
+
+    @include respond(desk) {
+      font-size: 2.97rem;
+    }
+
+    @include respond(phone-land) {
+      // @include respond(tab-port) {
+      font-size: 3.33rem;
+
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    transition: transform 0.5s;
+    &:hover {
+      transform: translateX(15px);
+    }
+  }
+}

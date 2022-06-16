@@ -1,0 +1,252 @@
+.navigation {
+  &__checkbox {
+    visibility: hidden;
+    opacity: 0;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    height: 5.8rem;
+    width: 5.8rem;
+    position: absolute;
+
+    border-radius: 50%;
+    z-index: 2000;
+
+    top: 3.2rem;
+    right: 3rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__background {
+    height: 3.75rem;
+    width: 3.75rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-image: radial-gradient($color-black, $color-black);
+    z-index: 1000;
+
+    transition: opacity 0.2s;
+
+    @include respond(tab-port) {
+      visibility: none;
+      opacity: 0;
+    }
+  }
+
+  &__nav {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+
+    @include respond(tab-port) {
+      height: 100%;
+
+      padding-top: 0;
+      padding-right: 0;
+
+      margin-top: -0.5rem;
+
+      position: relative;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+
+    @include respond(tab-port) {
+      position: relative;
+      display: flex;
+    }
+  }
+
+  &__item {
+    margin: 0rem;
+  }
+
+  &__link,
+  &__link-language {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3.7rem;
+      letter-spacing: 1px;
+      padding: 0.5rem 0.2rem;
+
+      text-decoration: none;
+
+      transition: opacity 0.5s;
+
+      @include respond(tab-port) {
+        font-size: 1.8rem;
+        line-height: 1.15;
+        letter-spacing: 0px;
+        padding: 0rem;
+        margin-top: 0.8rem;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      transform: scale(0.9);
+
+      transition: transform 0.5s;
+
+      @include respond(tab-port) {
+        transform: none;
+      }
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      color: $color-white;
+
+      @include respond(tab-port) {
+        color: $color-black;
+        padding: 0rem 0.23rem;
+      }
+    }
+  }
+
+  &__link-language {
+    @include link;
+    // color: $color-grey-dark-2;
+    display: inline-block;
+    font-size: 3.7rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.1rem;
+    text-decoration: none;
+
+    @include respond(tab-port) {
+      margin-left: 1.2rem;
+
+      font-size: 1.8rem;
+      line-height: 1.15;
+      padding: 0rem 0.1rem;
+      letter-spacing: 0px;
+    }
+
+    &:hover {
+      @include respond(tab-port) {
+        color: $color-black !important;
+        transition: color 0.5s;
+      }
+    }
+
+    &:link,
+    &:visited {
+      color: rgba($color-white, 0.3);
+
+      @include respond(tab-port) {
+        color: rgba($color-black, 0.3);
+      }
+    }
+
+    span {
+      cursor: default;
+
+      color: $color-white;
+
+      @include respond(tab-port) {
+        color: $color-black;
+      }
+    }
+  }
+
+  // functionality
+  &__checkbox:checked ~ &__background {
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  // icon
+  &__icon {
+    position: relative;
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+
+    transition: all 0.3s;
+    width: 5.3rem;
+    height: 5.3rem;
+    background-color: $color-black;
+    display: inline-block;
+
+    @include respond(tab-port) {
+      visibility: none;
+      opacity: 0;
+    }
+
+    &::before,
+    &::after {
+      width: 5.3rem;
+      height: 5px;
+      background-color: $color-white;
+      display: inline-block;
+
+      @include respond(tab-land) {
+        visibility: none;
+        opacity: 0;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      transform: rotate(-90deg);
+      top: 2.4rem;
+    }
+
+    &::after {
+      top: 2.4rem;
+    }
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    transform: rotate(45deg);
+    background-color: transparent;
+  }
+}

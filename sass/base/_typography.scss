@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Arial';
+  src: url('./../css/fonts/Arial/ArialMT.eot');
+  src: local('Arial'), local('ArialMT'),
+    url('./../css/fonts/Arial/ArialMT.eot?#iefix') format('embedded-opentype'),
+    url('./../css/fonts/Arial/ArialMT.woff') format('woff'),
+    url('./../css/fonts/Arial/ArialMT.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('./../css/fonts/Arial-Black/Arial-Black.eot');
+  src: local('Arial-black'),
+    url('./../css/fonts/Arial-Black/Arial-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('./../css/fonts/Arial-Black/Arial-Black.woff') format('woff'),
+    url('./../css/fonts/Arial-Black/Arial-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-black;
+}

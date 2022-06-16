@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.55rem;
+  padding-bottom: 2.55rem;
+
+  @include container;
+
+  @include respond(tab-port) {
+    padding-top: 4.4rem;
+    padding-bottom: 4.4rem;
+  }
+
+  @include respond(tab-land) {
+    padding-top: 4.55rem;
+    padding-bottom: 4.55rem;
+  }
+
+  @include respond(desk) {
+    padding-top: 4.4rem;
+    padding-bottom: 4.4rem;
+  }
+
+  @include respond(phone-land) {
+    // @include respond(tab-port) {
+    padding-top: 2.55rem;
+    padding-bottom: 2.55rem;
+  }
+
+  &__logo {
+    max-width: 20rem;
+
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+    font-size: 3.15rem;
+    line-height: 0.97;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-black;
+    letter-spacing: -1.8px;
+
+    @include respond(tab-port) {
+      max-width: 40rem;
+      font-size: 2.91rem;
+      letter-spacing: -1.5px;
+    }
+
+    @include respond(tab-land) {
+      max-width: 40rem;
+      font-size: 2.9rem;
+      letter-spacing: -1.44px;
+    }
+
+    @include respond(desk) {
+      max-width: 40rem;
+      font-size: 2.586rem;
+      letter-spacing: -1.44px;
+    }
+
+    @include respond(phone-land) {
+      // @include respond(tab-port) {
+      max-width: 40rem;
+      font-size: 3.15rem;
+      letter-spacing: -1.8px;
+    }
+  }
+}

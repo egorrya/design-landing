@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico" />
+    <title>Oleg Krisanov</title>
+    <script defer src="../../script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="header__logo">Oleg Krisanov</a>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a
+                href="../projects.html"
+                class="navigation__link navigation__link--active"
+                >Project</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="../about.html" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="../contact.html" class="navigation__link">Contact</a>
+            </li>
+            <li class="navigation__item">
+              <a href="../../projects.html" class="navigation__link-language"
+                >Ру <span>Eng</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="project">
+        <div class="project__main-image video">
+          <video
+            autoplay
+            muted
+            loop
+            poster="../../img/projects/earthquake/Earthquake_01.jpg"
+          >
+            <source
+              class="project__video-source"
+              src="../../img/projects/earthquake/Earthquake.mp4"
+              type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+            />
+          </video>
+          <img src="../../img/projects/earthquake/Earthquake_01.jpg" alt="" />
+        </div>
+
+        <div class="project__info">
+          <div class="project__info-column">
+            <h2 class="project__title">Earthquake</h2>
+            <h4 class="project__subtitle">Visual effects</h4>
+            <!-- <div class="project__brief">
+              <p>Client: FSS</p>
+              <p>Agency: Oleg Krisanov</p>
+              <p>Production: Oleg Krisanov</p>
+            </div> -->
+          </div>
+
+          <p class="project__description">
+            Movie narrating about dramatic events, taken place in 1988
+          </p>
+        </div>
+
+        <div class="project__gallery">
+          <div class="project__image">
+            <img
+              style="min-height: 130%"
+              src="../../img/projects/earthquake/Earthquake_03.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="project__image project__image--50">
+            <img src="../../img/projects/earthquake/Earthquake_01.jpg" alt="" />
+          </div>
+          <div class="project__image project__image--50">
+            <img
+              style="min-height: 130%"
+              src="../../img/projects/earthquake/Earthquake_04.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="project__image">
+            <img
+              style="min-height: 100%"
+              src="../../img/projects/earthquake/Earthquake_02.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="project__more">
+          <a href="./../projects.html">More Projects</a>
+        </div>
+      </section>
+
+      <section class="projects projects__inside">
+        <a href="./showreel.html" class="projects__item">
+          <img
+            class="projects__image projects__image--wide"
+            src="../../img/projects/showreel/reel.jpg"
+            alt="showreel"
+            loading="lazy"
+          />
+
+          <div class="projects__info">
+            <h2>Showreel</h2>
+            <p>One minute of your life</p>
+          </div>
+        </a>
+
+        <a href="./etude.html" class="projects__item">
+          <img
+            class="projects__image"
+            src="../../img/projects/etude01/Etude_01_01.jpg"
+            alt="Etude_01_01"
+            loading="lazy"
+          />
+
+          <div class="projects__info">
+            <h2>Etude No1</h2>
+            <p>Or "Once upon a time here was a diamond"</p>
+          </div>
+        </a>
+
+        <a href="./snailsike.html" class="projects__item">
+          <img
+            class="projects__image projects__image--wide"
+            src="../../img/projects/snail-and-bike/Bike_and_Snail_01.jpg"
+            alt="snail-and-bike"
+            loading="lazy"
+          />
+
+          <div class="projects__info">
+            <h2>Snail&Bike</h2>
+            <p>Love story</p>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div></div>
+
+        <div class="footer__copyright">
+          Copyright © <span class="footer__copyright--year">2022</span> Oleg
+          Krisanov. All rights reserved
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__container">
+        <video
+          autoplay
+          muted
+          loop
+          poster="../../img/projects/earthquake/Earthquake_01.jpg"
+        >
+          <source
+            class="project__video-source"
+            src="../../img/projects/earthquake/Earthquake.mp4"
+            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+          />
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

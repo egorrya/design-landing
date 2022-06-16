@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <title>Oleg Krisanov</title>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__logo">Oleg Krisanov</a>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./projects.html" class="navigation__link">Проекты</a>
+            </li>
+            <li class="navigation__item">
+              <a
+                href="./about.html"
+                class="navigation__link navigation__link--active"
+                >Инфо</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="./contact.html" class="navigation__link">Контакты</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./en/about.html" class="navigation__link-language"
+                ><span>Ру</span> Eng</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="about__container about__container--1">
+          <h2 class="about__description">
+            От идеи до финального продукта. Умеем:
+          </h2>
+          <div class="about__products">
+            <div class="about__product-list">
+              <h3 class="about__title">Креатив</h3>
+              <p>Разработка концепции</p>
+              <p>Написание синопсиса, сценария</p>
+              <p>Создание визуального решения проекта</p>
+              <p>Дизайн</p>
+            </div>
+
+            <div class="about__product-list">
+              <h3 class="about__title">Продакшн</h3>
+              <p>Съемки</p>
+              <p>Монтаж</p>
+              <p>Цветокоррекция</p>
+              <p>Саунд дизайн</p>
+            </div>
+
+            <div class="about__product-list">
+              <h3 class="about__title">VFX</h3>
+              <p>Создание аниматика</p>
+              <p>Анимация и графические элементы</p>
+              <p>Создание визуальных эффектов</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__container about__container--2">
+          <h2 class="about__description">Взгляд с разных сторон. Делаем:</h2>
+          <div class="about__products">
+            <div class="about__product-list">
+              <h3 class="about__title">Реклама</h3>
+              <p>Рекламные ролики</p>
+              <p>Информационные ролики</p>
+              <p>Презентационные фильмы</p>
+            </div>
+
+            <div class="about__product-list">
+              <h3 class="about__title">Кино</h3>
+              <p>
+                Разработка и производство сцен и открывающих титров для
+                полнометражных фильмов
+              </p>
+            </div>
+
+            <div class="about__product-list">
+              <h3 class="about__title">TB</h3>
+              <p>Брендинг телеканалов</p>
+              <p>Оформление телешоу</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__container about__desktop-images about__container--3">
+          <h2 class="about__description about__description--images">
+            Бренды и компании, для которых были реализованны проекты
+          </h2>
+          <div class="about__clients">
+            <div class="about__client">
+              <img src="./img/clients/dirol.png" alt="dirol" />
+            </div>
+            <div class="about__client">
+              <img src="./img/clients/channel.png" alt="channel" />
+            </div>
+            <div class="about__client about__client--bbdo">
+              <img src="./img/clients/BBDO.png" alt="BBDO" />
+            </div>
+            <div class="about__client about__client--mts">
+              <img src="./img/clients/MTS.png" alt="MTS" />
+            </div>
+            <div class="about__client about__client--vw">
+              <img src="./img/clients/vw.png" alt="vw" />
+            </div>
+            <div class="about__client about__client--heinz">
+              <img src="./img/clients/Heinz.png" alt="Heinz" />
+            </div>
+            <div class="about__client about__client--park">
+              <img src="./img/clients/park.jpeg" alt="park" />
+            </div>
+            <div class="about__client about__client--hansa">
+              <img src="./img/clients/hansa.png" alt="hansa" />
+            </div>
+            <div class="about__client about__client--lays">
+              <img src="./img/clients/Lays.png" alt="Lays" />
+            </div>
+            <div class="about__client">
+              <img src="./img/clients/Rossiya.png" alt="Rossiya" />
+            </div>
+            <div class="about__client">
+              <img src="./img/clients/cheetos.png" alt="cheetos" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__list">
+          <a href="https://vimeo.com/user38142368" class="footer__link"
+            >Vimeo</a
+          >
+          <a href="https://www.behance.net/olegkrisanov" class="footer__link"
+            >Behance</a
+          >
+        </div>
+
+        <div class="footer__copyright">
+          Copyright © <span class="footer__copyright--year">2022</span> Oleg
+          Krisanov. All rights reserved
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
