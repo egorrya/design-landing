@@ -18,11 +18,15 @@ body {
   position: relative;
   min-height: 100vh;
   line-height: 1.2;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 ::selection {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: $color-white;
+  color: $color-black;
 }
 
 .overflow-y-none {
