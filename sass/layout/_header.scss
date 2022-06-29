@@ -17,8 +17,8 @@
   }
 
   @include respond(desk) {
-    padding-top: 4.4rem;
-    padding-bottom: 4.4rem;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
   }
 
   @include respond(phone-land) {
@@ -52,8 +52,9 @@
     }
 
     @include respond(desk) {
-      max-width: 40rem;
-      font-size: 2.586rem;
+      max-width: 40vw;
+      // font-size: 2.586rem;
+      font-size: 1.92vw;
       letter-spacing: -1.44px;
     }
 

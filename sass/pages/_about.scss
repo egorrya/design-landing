@@ -13,7 +13,7 @@
   }
 
   @include respond(desk) {
-    padding-top: 4.5rem;
+    padding-top: 6.2vh;
   }
 
   &__container {
@@ -45,6 +45,10 @@
       @include respond(tab-land) {
         margin-top: 0rem;
       }
+
+      @include respond(desk) {
+        margin-bottom: 0.8rem;
+      }
     }
   }
 
@@ -72,7 +76,11 @@
     }
 
     @include respond(desk) {
-      max-width: 29.4%;
+      padding-left: 3.7vw;
+
+      font-size: 1.86vw;
+
+      max-width: 29%;
       line-height: 1.1;
     }
 
@@ -100,7 +108,7 @@
 
       @include respond(desk) {
         padding-top: 0rem;
-        padding-left: 5rem;
+        padding-left: 3.7vw;
         max-width: 50%;
       }
 
@@ -126,9 +134,9 @@
     }
 
     @include respond(desk) {
-      padding-left: 3.65rem;
+      padding-left: 3.2vw;
       vertical-align: top;
-      width: 70%;
+      width: 70.5%;
 
       margin-bottom: 5.8rem;
     }
@@ -164,7 +172,10 @@
     }
 
     @include respond(desk) {
-      margin-bottom: 1.12rem;
+      font-size: 1.8vw;
+      line-height: 1.5;
+
+      margin-bottom: 1vw;
     }
   }
 
@@ -185,7 +196,7 @@
 
     @include respond(desk) {
       width: 27.5%;
-      margin-bottom: 1.6rem;
+      margin-bottom: 4.6vw;
     }
 
     &:first-child {
@@ -212,7 +223,7 @@
       }
 
       @include respond(desk) {
-        margin-right: 5.5%;
+        margin-right: 6%;
       }
     }
 
@@ -237,10 +248,10 @@
       }
 
       @include respond(desk) {
-        font-size: 0.9rem;
+        font-size: 0.7vw;
         line-height: 1.4;
         padding-left: 0rem;
-        max-width: 73%;
+        max-width: 85%;
       }
     }
   }
@@ -299,6 +310,12 @@
       margin-top: 0rem;
     }
 
+    @include respond(desk) {
+      flex: 0 0 25%;
+
+      margin-top: 1vw;
+    }
+
     &:nth-child(3n) {
       flex: 0 0 100%;
 
@@ -321,7 +338,7 @@
       }
 
       @include respond(desk) {
-        margin-top: 6rem;
+        margin-top: 5.5vw;
       }
     }
 
@@ -346,12 +363,31 @@
         max-width: 65%;
         // margin-left: 0;
       }
+
+      @include respond(desk) {
+        max-width: 85%;
+        max-height: 3vw;
+      }
+    }
+
+    &:nth-child(2) {
+      img {
+        @include respond(desk) {
+          margin-right: 47%;
+          max-height: 3.5vw;
+        }
+      }
     }
 
     &:nth-child(3) {
       img {
         max-width: 70%;
         max-height: 3.5rem;
+
+        @include respond(desk) {
+          max-width: 87%;
+          max-height: 4vw;
+        }
       }
     }
 
@@ -362,6 +398,11 @@
 
         @include respond(tab-land) {
           margin-left: 2.5rem;
+        }
+
+        @include respond(desk) {
+          margin-left: 30%;
+          max-height: 3.5vw;
         }
       }
     }
@@ -379,6 +420,11 @@
         @include respond(tab-land) {
           margin-right: 0rem;
           max-height: 5rem;
+        }
+
+        @include respond(desk) {
+          margin-right: 13%;
+          max-height: 4vw;
         }
       }
     }
@@ -399,6 +445,10 @@
           margin-top: 0rem;
           max-height: 3rem;
         }
+
+        @include respond(desk) {
+          max-height: 3vw;
+        }
       }
     }
 
@@ -415,6 +465,13 @@
           max-height: 4rem;
           margin-left: 0rem;
           margin-top: -0.5rem;
+        }
+
+        @include respond(desk) {
+          // margin-top: 0;
+          margin-left: 7%;
+
+          max-height: 3.5vw;
         }
       }
     }
@@ -436,6 +493,12 @@
 
           max-width: 70%;
         }
+
+        @include respond(desk) {
+          margin-right: 0%;
+
+          max-height: 4vw;
+        }
       }
     }
 
@@ -454,6 +517,12 @@
           padding-top: 0rem;
           margin-right: 2rem;
         }
+
+        @include respond(desk) {
+          max-height: 4vw;
+          max-width: 70%;
+          margin-right: 24%;
+        }
       }
     }
 
@@ -466,6 +535,14 @@
         @include respond(tab-land) {
           margin-left: 3.1rem;
         }
+
+        @include respond(desk) {
+          margin-top: 0;
+
+          max-height: 2vw;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
 
@@ -477,6 +554,14 @@
 
         @include respond(tab-land) {
           margin-left: 1.5rem;
+        }
+
+        @include respond(desk) {
+          margin-top: 0;
+
+          max-height: 3.5vw;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     }

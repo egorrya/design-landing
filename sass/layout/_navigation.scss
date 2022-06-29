@@ -111,6 +111,12 @@
         padding: 0rem;
         margin-top: 0.8rem;
       }
+
+      @include respond(desk) {
+        margin-top: 0.2rem;
+
+        font-size: 1.4vw;
+      }
     }
 
     &:hover,
@@ -136,6 +142,10 @@
         color: $color-black;
         padding: 0rem 0.23rem;
       }
+
+      @include respond(desk) {
+        padding: 0rem 0.18vw;
+      }
     }
   }
 
@@ -149,12 +159,18 @@
     text-decoration: none;
 
     @include respond(tab-port) {
-      margin-left: 1.2rem;
+      margin-left: 1.2vw;
 
       font-size: 1.8rem;
       line-height: 1.15;
       padding: 0rem 0.1rem;
       letter-spacing: 0px;
+    }
+
+    @include respond(desk) {
+      // font-size: 1.35vw;
+      padding: 0 !important;
+      font-size: 1.4vw;
     }
 
     &:hover {

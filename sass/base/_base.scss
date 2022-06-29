@@ -10,7 +10,7 @@ html {
   font-size: 62.5%; // 1rem = 10px
 
   @include respond(big-desk) {
-    font-size: 75%;
+    // font-size: 75%;
   }
 }
 

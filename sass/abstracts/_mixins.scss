@@ -73,12 +73,12 @@
   }
 
   @include respond(desk) {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 3.7vw;
+    padding-right: 3.7vw;
 
-    max-width: 119rem;
-    margin-left: auto;
-    margin-right: auto;
+    // max-width: 119rem;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 
   @include respond(phone-land) {

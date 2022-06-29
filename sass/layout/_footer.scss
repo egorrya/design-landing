@@ -5,6 +5,10 @@
 
   height: 9rem;
 
+  @include respond(desk) {
+    height: 7vw;
+  }
+
   &__content {
     position: absolute;
     left: 0;
@@ -12,7 +16,7 @@
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 119rem;
+    // max-width: 119rem;
 
     padding: 0 3rem 3rem;
 
@@ -28,7 +32,7 @@
     }
 
     @include respond(desk) {
-      padding: 0 0 2.6rem;
+      padding: 0 3.7vw 4.8vh;
     }
 
     @include respond(phone-land) {
@@ -60,7 +64,7 @@
     }
 
     @include respond(desk) {
-      font-size: 1.1rem;
+      font-size: 0.85vw;
     }
 
     @include respond(phone-land) {
@@ -80,6 +84,10 @@
 
     @include respond(tab-land) {
       font-size: 0.71rem;
+    }
+
+    @include respond(desk) {
+      font-size: 0.545vw;
     }
 
     @include respond(phone-land) {
