@@ -586,8 +586,8 @@ body {
     @media only screen and (min-width: 75em) {
       .project__subtitle {
         padding-left: 3.8vw;
-        font-size: 1.42vw;
-        line-height: 1;
+        font-size: 1.4vw;
+        line-height: 1.2;
         max-width: 18.8vw; } }
     @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
       .project__subtitle {
@@ -616,11 +616,12 @@ body {
         line-height: 1.25; } }
     @media only screen and (min-width: 75em) {
       .project__description {
-        margin-top: 3.33vw;
+        margin-top: 3.1vw;
         padding-top: 0.5vw;
-        padding-left: 3.4vw;
+        padding-left: 3.7vw;
         font-size: 0.9vw;
-        line-height: 1.25; } }
+        line-height: 1.25;
+        max-width: 40%; } }
     @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
       .project__description {
         margin-top: 0.8rem;
@@ -662,7 +663,7 @@ body {
         padding-top: 3.1rem; } }
     @media only screen and (min-width: 75em) {
       .project__gallery {
-        padding-top: 2.6vw; } }
+        padding-top: 2.3vw; } }
     @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
       .project__gallery {
         padding-top: 2rem; } }

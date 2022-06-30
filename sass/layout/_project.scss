@@ -147,8 +147,8 @@
     @include respond(desk) {
       padding-left: 3.8vw;
 
-      font-size: 1.42vw;
-      line-height: 1;
+      font-size: 1.4vw;
+      line-height: 1.2;
       max-width: 18.8vw;
     }
 
@@ -186,13 +186,15 @@
     }
 
     @include respond(desk) {
-      margin-top: 3.33vw;
+      margin-top: 3.1vw;
       padding-top: 0.5vw;
 
-      padding-left: 3.4vw;
+      padding-left: 3.7vw;
 
       font-size: 0.9vw;
       line-height: 1.25;
+
+      max-width: 40%;
     }
 
     @include respond(phone-land) {
@@ -249,7 +251,7 @@
     }
 
     @include respond(desk) {
-      padding-top: 2.6vw;
+      padding-top: 2.3vw;
 
       // margin-right: 0.08rem;
     }
