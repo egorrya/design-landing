@@ -70,17 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const projectsOneSection = document.querySelector('.projects--one');
 
-  projectsOneSection
-    .querySelectorAll('.projects__item')
-    .forEach((item) => item.classList.add('opacity-zero'));
+  if (projectsOneSection) {
+    projectsOneSection
+      .querySelectorAll('.projects__item')
+      .forEach((item) => item.classList.add('opacity-zero'));
 
-  projectsOneSection
-    .querySelectorAll('.projects__item')
-    .forEach((item, index) => {
-      setTimeout(() => {
-        item.classList.add('fade-in');
-      }, index * 100);
-    });
+    projectsOneSection
+      .querySelectorAll('.projects__item')
+      .forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add('fade-in');
+        }, index * 100);
+      });
+  }
 });
 
 // popup
