@@ -70,9 +70,12 @@ body {
 .load-more {
   padding-left: 3rem;
   padding-right: 3rem;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  width: 100%; }
   @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
     .load-more {
       padding-left: 4.6rem;
@@ -85,12 +88,28 @@ body {
     .load-more {
       padding-left: 3rem;
       padding-right: 3rem; } }
+  @media only screen and (min-width: 75em) {
+    .load-more {
+      padding: 1.6vw 0 2.6vw; } }
   .load-more a {
     color: #000;
     text-decoration: none;
+    cursor: pointer;
     font-size: 2.3rem;
     font-weight: 900;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: 0.5s; }
+    @media only screen and (min-width: 75em) {
+      .load-more a {
+        font-size: 1.8vw; } }
+    @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
+      .load-more a {
+        font-size: 2.66rem;
+        line-height: 1.2; } }
+    .load-more a:hover {
+      transform: scale(1.1); }
+    .load-more a:active {
+      transform: scale(1); }
 
 .popup {
   position: absolute;
@@ -1429,7 +1448,7 @@ body {
         margin-bottom: 1.3rem; } }
     @media only screen and (min-width: 75em) {
       .projects__item {
-        margin-bottom: 2vh; } }
+        margin-bottom: 1.8vh; } }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
       .projects__item:not(:nth-child(3n)) {
         margin-right: 1.25%; } }

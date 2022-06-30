@@ -68,15 +68,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // add fade in to every project
 document.addEventListener('DOMContentLoaded', () => {
-  document
+  const projectsOneSection = document.querySelector('.projects--one');
+
+  projectsOneSection
     .querySelectorAll('.projects__item')
     .forEach((item) => item.classList.add('opacity-zero'));
 
-  document.querySelectorAll('.projects__item').forEach((item, index) => {
-    setTimeout(() => {
-      item.classList.add('fade-in');
-    }, index * 100);
-  });
+  projectsOneSection
+    .querySelectorAll('.projects__item')
+    .forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.add('fade-in');
+      }, index * 100);
+    });
 });
 
 // popup
@@ -89,6 +93,13 @@ if (projectOpenPopup && popup && window.innerWidth >= 680) {
     window.scrollTo(0, 0);
     document.querySelector('body').classList.add('overflow-y-none');
     popup.classList.add('popup--show');
+
+    const popupVideo = popup.querySelector('video');
+
+    if (popupVideo.paused) popupVideo.play();
+    popupVideo.muted = false;
+    popupVideo.volume = 0.5;
+    popupVideo.currentTime = 0;
   });
 } else if (projectOpenPopup && popup && window.innerWidth <= 680) {
   popup.remove();
@@ -104,8 +115,12 @@ if (homeButton && popup)
 
 if (popup)
   popup.addEventListener('click', () => {
+    const popupVideo = popup.querySelector('video');
+
     document.querySelector('body').classList.remove('overflow-y-none');
     popup.classList.remove('popup--show');
+
+    popupVideo.muted = true;
   });
 
 // mobile nav
@@ -113,3 +128,37 @@ document.querySelector('.navigation__button').addEventListener('click', () => {
   window.scrollTo(0, 0);
   document.querySelector('body').classList.toggle('overflow-y-none');
 });
+
+console.log('rrr');
+// load more
+const loadMore = document.querySelector('.load-more');
+const projectsTwoSection = document.querySelector('.projects--two');
+
+if (loadMore && projectsTwoSection) {
+  // load more button init
+  loadMore.style.display = 'flex';
+  projectsTwoSection.style.display = 'none';
+
+  // fade in init
+  projectsTwoSection
+    .querySelectorAll('.projects__item')
+    .forEach((item) => item.classList.add('opacity-zero'));
+
+  loadMore.addEventListener('click', () => {
+    // hide button
+    loadMore.style.opacity = '0';
+    loadMore.style.position = 'absolute';
+    // loadMore.querySelector('a').style.fontSize = '0';
+
+    // show projects
+    projectsTwoSection.style.display = 'flex';
+
+    projectsTwoSection
+      .querySelectorAll('.projects__item')
+      .forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add('fade-in');
+        }, index * 100);
+      });
+  });
+}

@@ -34,7 +34,7 @@
     }
 
     @include respond(desk) {
-      margin-bottom: 2vh;
+      margin-bottom: 1.8vh;
     }
 
     &:not(:nth-child(3n)) {
