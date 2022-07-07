@@ -165,6 +165,9 @@
       line-height: 1.15;
       padding: 0rem 0.1rem;
       letter-spacing: 0px;
+
+      color: rgba(0, 0, 0, 0.3);
+      transition: color 0.5s !important;
     }
 
     @include respond(desk) {

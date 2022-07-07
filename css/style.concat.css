@@ -338,7 +338,9 @@ body {
       font-size: 1.8rem;
       line-height: 1.15;
       padding: 0rem 0.1rem;
-      letter-spacing: 0px; } }
+      letter-spacing: 0px;
+      color: rgba(0, 0, 0, 0.3);
+      transition: color 0.5s !important; } }
   @media only screen and (min-width: 75em) {
     .navigation__link-language {
       padding: 0 !important;
@@ -691,7 +693,6 @@ body {
   .project__image {
     position: relative;
     margin-top: 0.81rem;
-    background-color: black;
     flex-basis: 100%;
     aspect-ratio: 2.06/1;
     overflow: hidden; }
@@ -714,7 +715,6 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); }
     .project__image--50 {
-      background-color: black;
       flex-basis: 49%;
       aspect-ratio: 1.015/1; }
       @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
