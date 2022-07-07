@@ -12,6 +12,14 @@
   100% {
     opacity: 1; } }
 
+@keyframes fadeInAndDelay {
+  0% {
+    opacity: 0; }
+  33% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.3s 0s forwards; }
@@ -523,6 +531,9 @@ body {
           height: auto !important;
           width: 100%; } }
   @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
+    .project__main-image.video {
+      background-color: #000; } }
+  @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
     .project__main-image.video img {
       display: none; } }
   .project__main-image.video video {
@@ -530,7 +541,8 @@ body {
     @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
       .project__main-image.video video {
         display: block;
-        cursor: url(./../img/play.png), auto; } }
+        cursor: url(./../img/play.png), auto;
+        animation: fadeInAndDelay 2s; } }
   @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
     .project__info {
       display: flex; } }

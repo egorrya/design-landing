@@ -44,6 +44,10 @@
   }
 
   &__main-image.video {
+    @include respond(tab-land) {
+      background-color: #000;
+    }
+
     img {
       @include respond(tab-land) {
         display: none;
@@ -56,6 +60,7 @@
       @include respond(tab-land) {
         display: block;
         cursor: url(./../img/play.png), auto;
+        animation: fadeInAndDelay 2s;
       }
     }
   }

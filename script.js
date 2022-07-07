@@ -175,8 +175,8 @@ if (popup) {
     popup.style.cursor = 'none';
   }
 
-  popup.addEventListener('mousemove', function () {
-    popup.style.cursor = "url('./img/close.png'), auto";
+  popup.addEventListener('mousemove', async () => {
+    popup.style.cursor = "url('./../img/close.png'), auto";
     clearTimeout(timer);
     timer = setTimeout(mouseStopped, 3000);
   });
