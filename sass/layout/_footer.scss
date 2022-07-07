@@ -5,6 +5,10 @@
 
   height: 9rem;
 
+  @include respond(tab-land) {
+    height: 11vw;
+  }
+
   @include respond(desk) {
     height: 7vw;
   }
