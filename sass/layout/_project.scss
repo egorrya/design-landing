@@ -210,6 +210,12 @@
       padding-left: 0.5rem;
       max-width: 100%;
     }
+
+    &--cheetos {
+      @include respond(desk) {
+        max-width: 31%;
+      }
+    }
   }
 
   &__brief {

@@ -644,6 +644,9 @@ body {
         line-height: 1.2;
         padding-left: 0.5rem;
         max-width: 100%; } }
+    @media only screen and (min-width: 75em) {
+      .project__description--cheetos {
+        max-width: 31%; } }
   .project__brief {
     display: none; }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
@@ -884,7 +887,7 @@ body {
       padding-bottom: 9rem; } }
   @media only screen and (min-width: 75em) {
     .about {
-      padding-top: 6.2vh; } }
+      padding-top: 6.27vh; } }
   .about__container {
     padding-left: 3rem;
     padding-right: 3rem; }
@@ -941,9 +944,10 @@ body {
     @media only screen and (min-width: 75em) {
       .about__description {
         padding-left: 3.7vw;
-        font-size: 1.86vw;
+        font-size: 1.85vw;
+        letter-spacing: 0.4px;
         max-width: 29%;
-        line-height: 1.1; } }
+        line-height: 1.08; } }
     @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
       .about__description {
         padding-left: 0rem; } }
@@ -984,7 +988,7 @@ body {
       padding-left: 3.2vw;
       vertical-align: top;
       width: 70.5%;
-      margin-bottom: 5.8rem; } }
+      margin-bottom: 6.1rem; } }
   @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
     .about__products {
       padding-left: 0rem; } }
@@ -1009,9 +1013,9 @@ body {
         margin-bottom: 0.88rem; } }
     @media only screen and (min-width: 75em) {
       .about__title {
-        font-size: 1.8vw;
-        line-height: 1.5;
-        margin-bottom: 1vw; } }
+        font-size: 1.86vw;
+        line-height: 1.38;
+        margin-bottom: 1.05vw; } }
   .about__product-list {
     margin-bottom: 1.6rem; }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
@@ -1065,6 +1069,9 @@ body {
           line-height: 1.4;
           padding-left: 0rem;
           max-width: 85%; } }
+    @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
+      .about__product-list--commercial p {
+        max-width: 80%; } }
   @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
     .about__desktop-images {
       display: flex;

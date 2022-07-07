@@ -13,7 +13,7 @@
   }
 
   @include respond(desk) {
-    padding-top: 6.2vh;
+    padding-top: 6.27vh;
   }
 
   &__container {
@@ -78,10 +78,11 @@
     @include respond(desk) {
       padding-left: 3.7vw;
 
-      font-size: 1.86vw;
+      font-size: 1.85vw;
+      letter-spacing: 0.4px;
 
       max-width: 29%;
-      line-height: 1.1;
+      line-height: 1.08;
     }
 
     @include respond(phone-land) {
@@ -138,7 +139,7 @@
       vertical-align: top;
       width: 70.5%;
 
-      margin-bottom: 5.8rem;
+      margin-bottom: 6.1rem;
     }
 
     @include respond(phone-land) {
@@ -172,10 +173,10 @@
     }
 
     @include respond(desk) {
-      font-size: 1.8vw;
-      line-height: 1.5;
+      font-size: 1.86vw;
+      line-height: 1.38;
 
-      margin-bottom: 1vw;
+      margin-bottom: 1.05vw;
     }
   }
 
@@ -252,6 +253,14 @@
         line-height: 1.4;
         padding-left: 0rem;
         max-width: 85%;
+      }
+    }
+
+    &--commercial {
+      p {
+        @include respond(tab-land) {
+          max-width: 80%;
+        }
       }
     }
   }
