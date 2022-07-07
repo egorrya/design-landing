@@ -827,9 +827,8 @@ body {
         margin-bottom: 2.1rem; } }
     @media only screen and (min-width: 75em) {
       .home__title {
-        max-width: 60% !important;
+        max-width: 60vw;
         font-size: 2.35vw;
-        max-width: 80%;
         margin-bottom: 2.8vh; } }
     @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
       .home__title {
@@ -838,6 +837,9 @@ body {
         font-size: 2.85rem;
         max-width: 80%;
         margin-bottom: 2rem; } }
+    @media only screen and (min-width: 75em) {
+      .home__title--eng {
+        max-width: 50vw; } }
   .home__button-container {
     opacity: 0;
     animation-name: fadeInLeft;
