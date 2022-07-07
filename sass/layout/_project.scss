@@ -164,6 +164,12 @@
       line-height: 1.2;
       max-width: 28rem;
     }
+
+    &--showreel {
+      @include respond(desk) {
+        max-width: 22vw;
+      }
+    }
   }
 
   &__description {
