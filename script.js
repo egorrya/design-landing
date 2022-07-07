@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+const popup = document.querySelector('.popup');
+const projectOpenPopup = document.querySelector('.project__main-image.video');
+const homeButton = document.querySelector('.home__button');
+
 // popup
 function openPopupVideo() {
   window.scrollTo(0, 0);
@@ -98,10 +102,6 @@ function openPopupVideo() {
   popupVideo.volume = 0.5;
   popupVideo.currentTime = 0;
 }
-
-const popup = document.querySelector('.popup');
-const projectOpenPopup = document.querySelector('.project__main-image.video');
-const homeButton = document.querySelector('.home__button');
 
 if (projectOpenPopup && popup && window.innerWidth >= 680) {
   projectOpenPopup.addEventListener('click', () => {
@@ -133,7 +133,6 @@ document.querySelector('.navigation__button').addEventListener('click', () => {
   document.querySelector('body').classList.toggle('overflow-y-none');
 });
 
-console.log('rrr');
 // load more
 const loadMore = document.querySelector('.load-more');
 const projectsTwoSection = document.querySelector('.projects--two');
@@ -164,5 +163,21 @@ if (loadMore && projectsTwoSection) {
           item.classList.add('fade-in');
         }, index * 100);
       });
+  });
+}
+// mouse moving inside popup cursor
+
+if (popup) {
+  let timer;
+
+  function mouseStopped() {
+    // the actual function that is called
+    popup.style.cursor = 'none';
+  }
+
+  popup.addEventListener('mousemove', function () {
+    popup.style.cursor = "url('./img/close.png'), auto";
+    clearTimeout(timer);
+    timer = setTimeout(mouseStopped, 3000);
   });
 }
