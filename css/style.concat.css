@@ -120,24 +120,24 @@ body {
       transform: scale(1); }
 
 .popup {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 9999;
   background-color: black;
   cursor: url("./../img/close.png"), auto;
-  width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s; }
+  transition: opacity 0.3s; }
   .popup--show {
     visibility: visible;
-    opacity: 1; }
+    opacity: 1;
+    width: 100%;
+    height: 100vh; }
   .popup__container {
     position: relative;
     width: 80%;
@@ -1420,7 +1420,7 @@ body {
     width: 100%;
     font-size: 2.4rem;
     line-height: 1.15;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: transform 0.5s; }
     .contact__link:hover {
       transform: translateX(8px); }
@@ -1490,6 +1490,10 @@ body {
       .projects__item:hover .projects__info {
         left: 0;
         opacity: 1; } }
+    @media only screen and (min-width: 75em) {
+      .projects__item:hover .projects__info h2,
+      .projects__item:hover .projects__info p {
+        opacity: 1; } }
   .projects__image {
     position: absolute;
     height: 101%;
@@ -1498,7 +1502,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     filter: grayscale(100%);
-    transition: all 0.5s; }
+    transition: height 0.5s; }
     .projects__image--wide {
       height: 133%; }
   .projects__info {
@@ -1508,7 +1512,7 @@ body {
     color: #ffffff;
     left: 0;
     opacity: 1;
-    transition: all 0.5s; }
+    transition: left 0.5s; }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
       .projects__info {
         width: 100%;
@@ -1541,7 +1545,9 @@ body {
           line-height: 1.15; } }
       @media only screen and (min-width: 75em) {
         .projects__info h2 {
-          font-size: 1.75vw; } }
+          font-size: 1.75vw;
+          opacity: 0;
+          transition: opacity 0.5s; } }
       @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
         .projects__info h2 {
           font-size: 2.2rem;
@@ -1564,7 +1570,9 @@ body {
           line-height: 1.125; } }
       @media only screen and (min-width: 75em) {
         .projects__info p {
-          font-size: 1.41vw; } }
+          font-size: 1.41vw;
+          opacity: 0;
+          transition: opacity 0.5s; } }
       @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
         .projects__info p {
           font-size: 1.6rem;

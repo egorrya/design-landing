@@ -57,6 +57,13 @@
         left: 0;
         opacity: 1;
       }
+
+      h2,
+      p {
+        @include respond(desk) {
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -71,7 +78,7 @@
 
     filter: grayscale(100%);
 
-    transition: all 0.5s;
+    transition: height 0.5s;
 
     &--wide {
       height: 133%;
@@ -106,7 +113,7 @@
     // animation
     left: 0;
     opacity: 1;
-    transition: all 0.5s;
+    transition: left 0.5s;
 
     @include respond(desk) {
       left: -50px;
@@ -131,6 +138,9 @@
 
       @include respond(desk) {
         font-size: 1.75vw;
+
+        opacity: 0;
+        transition: opacity 0.5s;
       }
 
       @include respond(phone-land) {
@@ -162,6 +172,8 @@
 
       @include respond(desk) {
         font-size: 1.41vw;
+        opacity: 0;
+        transition: opacity 0.5s;
       }
 
       @include respond(phone-land) {

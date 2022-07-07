@@ -165,8 +165,8 @@ if (loadMore && projectsTwoSection) {
       });
   });
 }
-// mouse moving inside popup cursor
 
+// mouse moving inside popup cursor
 if (popup) {
   let timer;
 
@@ -175,7 +175,7 @@ if (popup) {
     popup.style.cursor = 'none';
   }
 
-  popup.addEventListener('mousemove', async () => {
+  popup.addEventListener('mousemove', () => {
     popup.style.cursor = "url('./../img/close.png'), auto";
     clearTimeout(timer);
     timer = setTimeout(mouseStopped, 3000);
