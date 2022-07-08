@@ -88,14 +88,20 @@ document.addEventListener('DOMContentLoaded', () => {
 const popup = document.querySelector('.popup');
 const projectOpenPopup = document.querySelector('.project__main-image.video');
 const homeButton = document.querySelector('.home__button');
+const fullscreenElement =
+  document.fullscreenElement ||
+  document.mozFullScreenElement ||
+  document.webkitFullscreenElement ||
+  document.msFullscreenElement;
 
 // popup
 function openPopupVideo() {
+  const popupVideo = popup.querySelector('video');
+
   window.scrollTo(0, 0);
   document.querySelector('body').classList.add('overflow-y-none');
   popup.classList.add('popup--show');
-
-  const popupVideo = popup.querySelector('video');
+  popupVideo.style.display = 'block';
 
   if (popupVideo.paused) popupVideo.play();
   popupVideo.muted = false;
@@ -125,6 +131,7 @@ if (popup)
     popup.classList.remove('popup--show');
 
     popupVideo.muted = true;
+    popupVideo.style.display = 'none';
 
     if (projectOpenPopup) {
       const videoInsideHeader = projectOpenPopup.querySelector('video');
