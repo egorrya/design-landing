@@ -125,6 +125,12 @@ if (popup)
     popup.classList.remove('popup--show');
 
     popupVideo.muted = true;
+
+    if (projectOpenPopup) {
+      const videoInsideHeader = projectOpenPopup.querySelector('video');
+
+      if (videoInsideHeader.paused) videoInsideHeader.play();
+    }
   });
 
 // mobile nav
