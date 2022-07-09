@@ -15,7 +15,7 @@
   }
 
   &__item {
-    background: black;
+    // background: black;
     position: relative;
 
     flex-basis: 100%;
@@ -34,7 +34,7 @@
     }
 
     @include respond(desk) {
-      margin-bottom: 1.8vh;
+      margin-bottom: 1.17vw;
     }
 
     &:not(:nth-child(3n)) {
