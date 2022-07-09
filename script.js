@@ -194,3 +194,11 @@ if (popup) {
     timer = setTimeout(mouseStopped, 3000);
   });
 }
+
+// fix 100vh on mobile
+(() => {
+  if (projectOpenPopup && popup && window.innerWidth <= 680) {
+    const el = document.getElementById('intro');
+    el.style.minHeight = window.innerHeight + 'px';
+  }
+})();

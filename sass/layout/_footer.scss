@@ -3,18 +3,18 @@
   bottom: 0;
   left: 0;
 
-  height: 9rem;
+  // height: 9rem;
 
-  @include respond(tab-land) {
-    height: 11vw;
+  @include respond(tab-port) {
+    // height: 8rem;
   }
 
   @include respond(desk) {
-    height: 7vw;
+    // height: 7vw;
   }
 
   &__content {
-    position: absolute;
+    // position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
@@ -28,20 +28,20 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      padding: 0 4.6rem 2rem;
+      padding: 2rem 4.6rem;
     }
 
     @include respond(tab-land) {
-      padding: 0 4.6rem 4.2rem;
+      padding: 2rem 4.6rem;
     }
 
     @include respond(desk) {
-      padding: 0 3.7vw 4.8vh;
+      padding: 4.8vh 3.7vw;
     }
 
     @include respond(phone-land) {
       // @include respond(tab-port) {
-      padding: 0 3rem 0.5rem;
+      padding: 0.5rem 3rem;
     }
   }
 
