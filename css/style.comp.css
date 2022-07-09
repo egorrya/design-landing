@@ -56,17 +56,20 @@ body {
 
 @font-face {
   font-family: 'Arial';
-  src: url("./../css/fonts/Arial/ArialMT.eot");
-  src: local("Arial"), local("ArialMT"), url("./../css/fonts/Arial/ArialMT.eot?#iefix") format("embedded-opentype"), url("./../css/fonts/Arial/ArialMT.woff") format("woff"), url("./../css/fonts/Arial/ArialMT.ttf") format("truetype"), url("./../css/fonts/Arial/subset-ArialMT.svg#ArialMT") format("svg"), url("./../css/fonts/Arial/subset-ArialMT.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  src: url("./../css/fonts/Arial/arial.eot");
+  /* IE9*/
+  src: url("./../css/fonts/Arial/arial.eot?#iefix") format("embedded-opentype"), url("./../css/fonts/Arial/arial.woff2") format("woff2"), url("./../css/fonts/Arial/arial.woff") format("woff"), url("./../css/fonts/Arial/arial.ttf") format("truetype"), url("./../css/fonts/Arial/arial.svg#Arial") format("svg");
+  /* iOS 4.1- */ }
 
 @font-face {
   font-family: 'Arial';
-  src: url("./../css/fonts/Arial-Black/Arial-Black.eot");
-  src: local("Arial-black"), url("./../css/fonts/Arial-Black/Arial-Black.eot?#iefix") format("embedded-opentype"), url("./../css/fonts/Arial-Black/Arial-Black.woff") format("woff"), url("./../css/fonts/Arial-Black/Arial-Black.ttf") format("truetype"), url("./../css/fonts/Arial-Black/subset-Arial-Black.svg#Arial-Black") format("svg"), url("./../css/fonts/Arial-Black/subset-Arial-Black.woff2") format("woff2");
   font-weight: 900;
-  font-style: normal; }
+  src: url("./../css/fonts/Arial-black/arial_black.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("./../css/fonts/Arial-black/arial_black.eot?#iefix") format("embedded-opentype"), url("./../css/fonts/Arial-black/arial_black.woff2") format("woff2"), url("./../css/fonts/Arial-black/arial_black.woff") format("woff"), url("./../css/fonts/Arial-black/arial_black.ttf") format("truetype"), url("./../css/fonts/Arial-black/arial_black.svg#arial_black") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
 
 body {
   box-sizing: border-box;
@@ -81,7 +84,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 900; }
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
 
 .load-more {
   padding-left: 3rem;
@@ -196,6 +202,9 @@ h6 {
     max-width: 20rem;
     font-family: 'Arial', sans-serif;
     font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 3.15rem;
     line-height: 0.97;
     text-transform: uppercase;
@@ -1470,7 +1479,6 @@ h6 {
     .projects {
       margin-top: 0.1rem; } }
   .projects__item {
-    background: black;
     position: relative;
     flex-basis: 100%;
     aspect-ratio: 1/1;
@@ -1485,7 +1493,7 @@ h6 {
         margin-bottom: 1.2rem; } }
     @media only screen and (min-width: 75em) {
       .projects__item {
-        margin-bottom: 1.8vh; } }
+        margin-bottom: 1.17vw; } }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
       .projects__item:not(:nth-child(3n)) {
         margin-right: 1.25%; } }
