@@ -58,15 +58,18 @@ document.querySelector('.footer__copyright--year').innerHTML =
   new Date().getFullYear();
 
 // add absolute to the footer
-document.addEventListener('DOMContentLoaded', () => {
+const footerAbsolute = () => {
   const headerHeight = document.querySelector('header').scrollHeight;
   const mainHeight = document.querySelector('main').scrollHeight;
   const footerHeight = document.querySelector('.footer').scrollHeight;
+  const footer = document.querySelector('.footer');
 
   if (window.innerHeight > mainHeight + headerHeight) {
-    document.querySelector('.footer').classList.add('footer__absolute');
+    footer.classList.add('footer__absolute');
+  } else {
+    footer.classList.remove('footer__absolute');
   }
-});
+};
 
 // add fade in to every project
 document.addEventListener('DOMContentLoaded', () => {
@@ -176,6 +179,8 @@ if (loadMore && projectsTwoSection) {
           item.classList.add('fade-in');
         }, index * 100);
       });
+
+    footerAbsolute();
   });
 }
 
@@ -183,10 +188,10 @@ if (loadMore && projectsTwoSection) {
 if (popup) {
   let timer;
 
-  function mouseStopped() {
+  const mouseStopped = () => {
     // the actual function that is called
     popup.style.cursor = 'none';
-  }
+  };
 
   popup.addEventListener('mousemove', () => {
     popup.style.cursor = "url('./img/close.png'), auto";
@@ -195,10 +200,14 @@ if (popup) {
   });
 }
 
+// footer absolute
+document.addEventListener('DOMContentLoaded', footerAbsolute());
+
 // fix 100vh on mobile
-(() => {
-  if (projectOpenPopup && popup && window.innerWidth <= 680) {
-    const el = document.getElementById('intro');
-    el.style.minHeight = window.innerHeight + 'px';
-  }
-})();
+const appHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+};
+
+window.addEventListener('resize', appHeight);
+appHeight();

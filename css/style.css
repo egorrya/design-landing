@@ -27,6 +27,9 @@
 .opacity-zero {
   opacity: 0; }
 
+:root {
+  --app-height: 100%; }
+
 *,
 *::after,
 *::before {
@@ -43,6 +46,9 @@ body {
   line-height: 1.2; }
   body::-webkit-scrollbar {
     display: none; }
+  @media not all and (hover: hover) {
+    body {
+      height: var(--app-height); } }
 
 ::selection {
   background-color: #ffffff;
