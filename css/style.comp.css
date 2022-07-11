@@ -47,9 +47,9 @@ body {
   line-height: 1.2; }
   body::-webkit-scrollbar {
     display: none; }
-  @media not all and (hover: hover) {
+  @media only screen and (max-width: 75em) {
     body {
-      height: var(--app-height); } }
+      min-height: calc(var(--vh, 1vh) * 100); } }
 
 ::selection {
   background-color: #ffffff;
