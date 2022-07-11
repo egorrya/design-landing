@@ -66,20 +66,31 @@ const footerAbsolute = () => {
 
   if (window.innerHeight > mainHeight + headerHeight) {
     footer.classList.add('footer__absolute');
-    document.documentElement.style.overflowY = 'hidden';
+    document.querySelector('body').style.overflowY = 'hidden';
   } else {
     footer.classList.remove('footer__absolute');
-    document.documentElement.style.overflowY = 'auto';
+    document.querySelector('body').style.overflowY = 'auto';
   }
 };
 
 // add fade in to every project
 document.addEventListener('DOMContentLoaded', () => {
   const projectsOneSection = document.querySelector('.projects--one');
+
+  if (projectsOneSection) {
+    projectsOneSection
+      .querySelectorAll('.projects__item')
+      .forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add('fade-in');
+        }, index * 100);
+      });
+  }
+
   const projectsInside = document.querySelector('.projects__inside');
 
-  if (projectsOneSection || projectsInside) {
-    projectsOneSection
+  if (projectsInside) {
+    projectsInside
       .querySelectorAll('.projects__item')
       .forEach((item, index) => {
         setTimeout(() => {
