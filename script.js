@@ -66,8 +66,10 @@ const footerAbsolute = () => {
 
   if (window.innerHeight > mainHeight + headerHeight) {
     footer.classList.add('footer__absolute');
+    document.documentElement.style.overflowY = 'hidden';
   } else {
     footer.classList.remove('footer__absolute');
+    document.documentElement.style.overflowY = 'auto';
   }
 };
 
