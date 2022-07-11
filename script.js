@@ -76,8 +76,9 @@ const footerAbsolute = () => {
 // add fade in to every project
 document.addEventListener('DOMContentLoaded', () => {
   const projectsOneSection = document.querySelector('.projects--one');
+  const projectsInside = document.querySelector('.projects__inside');
 
-  if (projectsOneSection) {
+  if (projectsOneSection || projectsInside) {
     projectsOneSection
       .querySelectorAll('.projects__item')
       .forEach((item, index) => {
