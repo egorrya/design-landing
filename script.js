@@ -133,7 +133,7 @@ if (projectOpenPopup && popup && window.innerWidth >= 680) {
   });
 } else if (projectOpenPopup && popup && window.innerWidth <= 680) {
   popup.remove();
-  document.querySelector('.project__main-image').classList.remove('video');
+  projectOpenPopup.querySelector('video').remove();
 }
 
 if (homeButton && popup)
