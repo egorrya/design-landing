@@ -377,6 +377,7 @@
   &__more {
     display: flex;
     justify-content: center;
+    text-align: center;
 
     padding: 2.6rem 0;
 
@@ -396,6 +397,7 @@
       font-weight: 900;
 
       text-transform: uppercase;
+      text-align: center;
 
       @include respond(tab-port) {
         font-size: 1.5rem;
