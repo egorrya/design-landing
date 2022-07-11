@@ -91,6 +91,22 @@
     margin: 0rem;
   }
 
+  &.animation {
+    .navigation__link,
+    .navigation__link-language {
+      &:link,
+      &:visited {
+        transition: opacity 0.5s;
+      }
+    }
+
+    .navigation__link-language {
+      @include respond(tab-port) {
+        transition: color 0.5s !important;
+      }
+    }
+  }
+
   &__link,
   &__link-language {
     &:link,
@@ -102,7 +118,7 @@
 
       text-decoration: none;
 
-      transition: opacity 0.5s;
+      // transition: opacity 0.5s;
 
       @include respond(tab-port) {
         font-size: 1.8rem;
@@ -150,7 +166,6 @@
   }
 
   &__link-language {
-    @include link;
     // color: $color-grey-dark-2;
     display: inline-block;
     font-size: 3.7rem;
@@ -167,7 +182,7 @@
       letter-spacing: 0px;
 
       color: rgba(0, 0, 0, 0.3);
-      transition: color 0.5s !important;
+      // transition: color 0.5s !important;
     }
 
     @include respond(desk) {

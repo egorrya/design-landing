@@ -89,6 +89,9 @@ h6 {
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale; }
 
+a {
+  color: #000; }
+
 .load-more {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -303,13 +306,21 @@ h6 {
 .navigation__item {
   margin: 0rem; }
 
+.navigation.animation .navigation__link:link, .navigation.animation .navigation__link:visited,
+.navigation.animation .navigation__link-language:link,
+.navigation.animation .navigation__link-language:visited {
+  transition: opacity 0.5s; }
+
+@media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
+  .navigation.animation .navigation__link-language {
+    transition: color 0.5s !important; } }
+
 .navigation__link:link, .navigation__link:visited, .navigation__link-language:link, .navigation__link-language:visited {
   display: inline-block;
   font-size: 3.7rem;
   letter-spacing: 1px;
   padding: 0.5rem 0.2rem;
-  text-decoration: none;
-  transition: opacity 0.5s; }
+  text-decoration: none; }
   @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
     .navigation__link:link, .navigation__link:visited, .navigation__link-language:link, .navigation__link-language:visited {
       font-size: 1.8rem;
@@ -342,8 +353,6 @@ h6 {
       padding: 0rem 0.18vw; } }
 
 .navigation__link-language {
-  color: #000;
-  text-decoration: none;
   display: inline-block;
   font-size: 3.7rem;
   letter-spacing: 1px;
@@ -356,8 +365,7 @@ h6 {
       line-height: 1.15;
       padding: 0rem 0.1rem;
       letter-spacing: 0px;
-      color: rgba(0, 0, 0, 0.3);
-      transition: color 0.5s !important; } }
+      color: rgba(0, 0, 0, 0.3); } }
   @media only screen and (min-width: 75em) {
     .navigation__link-language {
       padding: 0 !important;

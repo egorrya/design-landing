@@ -34,6 +34,8 @@ const handleHover = (e, parentClass, childClass) => {
 
 // header nav opacity
 const nav = document.querySelector('.navigation');
+
+nav.classList.add('animation');
 nav.addEventListener('mouseover', (e) =>
   handleHover(e, 'navigation', 'navigation__link')
 );
@@ -71,10 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectsOneSection = document.querySelector('.projects--one');
 
   if (projectsOneSection) {
-    // projectsOneSection
-    //   .querySelectorAll('.projects__item')
-    //   .forEach((item) => item.classList.add('opacity-zero'));
-
     projectsOneSection
       .querySelectorAll('.projects__item')
       .forEach((item, index) => {
@@ -110,6 +108,9 @@ function openPopupVideo() {
 }
 
 if (projectOpenPopup && popup && window.innerWidth >= 680) {
+  const videoInsideHeader = projectOpenPopup.querySelector('video');
+  if (!videoInsideHeader.muted) videoInsideHeader.muted = true;
+
   projectOpenPopup.addEventListener('click', () => {
     openPopupVideo();
   });
@@ -134,9 +135,8 @@ if (popup)
     popupVideo.style.display = 'none';
 
     if (projectOpenPopup) {
-      const videoInsideHeader = projectOpenPopup.querySelector('video');
-
       if (videoInsideHeader.paused) videoInsideHeader.play();
+      if (!videoInsideHeader.muted) videoInsideHeader.muted = true;
     }
   });
 
