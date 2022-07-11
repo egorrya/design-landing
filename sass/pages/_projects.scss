@@ -37,6 +37,9 @@
       margin-bottom: 1.17vw;
     }
 
+    opacity: 0;
+    // transition: opacity 1s;
+
     &:not(:nth-child(3n)) {
       @include respond(tab-port) {
         margin-right: 1.25%;

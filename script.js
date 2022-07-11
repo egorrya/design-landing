@@ -71,9 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectsOneSection = document.querySelector('.projects--one');
 
   if (projectsOneSection) {
-    projectsOneSection
-      .querySelectorAll('.projects__item')
-      .forEach((item) => item.classList.add('opacity-zero'));
+    // projectsOneSection
+    //   .querySelectorAll('.projects__item')
+    //   .forEach((item) => item.classList.add('opacity-zero'));
 
     projectsOneSection
       .querySelectorAll('.projects__item')
