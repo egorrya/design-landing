@@ -281,7 +281,7 @@
 
   &__image {
     position: relative;
-    margin-top: 0.81rem;
+    margin-top: 1.7vw;
     // background-color: black;
     flex-basis: 100%;
     aspect-ratio: 2.06/1;
@@ -299,7 +299,7 @@
     }
 
     @include respond(desk) {
-      margin-top: 1.2vw;
+      margin-top: 1vw;
     }
 
     img {

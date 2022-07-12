@@ -447,7 +447,7 @@ a {
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 3rem 3rem; }
+    padding: 2.2rem 3rem 3rem; }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
       .footer__content {
         display: flex;
@@ -713,7 +713,7 @@ a {
         padding-top: 2rem; } }
   .project__image {
     position: relative;
-    margin-top: 0.81rem;
+    margin-top: 1.7vw;
     flex-basis: 100%;
     aspect-ratio: 2.06/1;
     overflow: hidden; }
@@ -727,7 +727,7 @@ a {
         margin-top: 1.2rem; } }
     @media only screen and (min-width: 75em) {
       .project__image {
-        margin-top: 1.2vw; } }
+        margin-top: 1vw; } }
     .project__image img {
       position: absolute;
       width: 100%;
