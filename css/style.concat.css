@@ -43,13 +43,10 @@ html {
 
 body {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   line-height: 1.2; }
   body::-webkit-scrollbar {
     display: none; }
-  @media only screen and (max-width: 75em) {
-    body {
-      min-height: calc(var(--vh, 1vh) * 100); } }
 
 ::selection {
   background-color: #ffffff;
@@ -279,7 +276,7 @@ a {
       opacity: 0; } }
 
 .navigation__nav {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   position: absolute;
   top: 0;
@@ -812,7 +809,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 75vh; }
+  height: calc(var(--vh, 1vh) * 75); }
   @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
     .home {
       padding-left: 4.6rem;
@@ -833,7 +830,7 @@ a {
       padding-left: 5.4vw; } }
   @media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: landscape) {
     .home {
-      height: 69vh; } }
+      height: calc(var(--vh, 1vh) * 69); } }
   .home__title {
     font-size: 7.3vw;
     line-height: 1;

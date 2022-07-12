@@ -48,7 +48,8 @@
   }
 
   &__nav {
-    height: 100vh;
+    // height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     position: absolute;
     top: 0;
