@@ -23,7 +23,7 @@
 // 1em = 16px
 @mixin respond($breakpoint) {
   @if $breakpoint==phone-land {
-    @media only screen and (max-width: 56.25em) and (max-device-width: 900px) and (orientation: landscape) {
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
       @content;
     }
   }
