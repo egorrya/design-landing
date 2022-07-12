@@ -18,7 +18,7 @@
   @include respond(phone-land) {
     // @include respond(tab-port) {
 
-    height: calc(var(--vh, 1vh) * 69);
+    height: calc(var(--vh, 1vh) * 75);
   }
 
   &__title {
