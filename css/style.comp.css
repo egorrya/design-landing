@@ -56,7 +56,7 @@ body {
   color: #000; }
 
 .overflow-y-none {
-  overflow-y: hidden; }
+  overflow-y: hidden !important; }
 
 .overflow-none {
   overflow: hidden; }
@@ -343,7 +343,7 @@ a {
 .navigation__link:hover, .navigation__link:active, .navigation__link-language:hover, .navigation__link-language:active {
   background-position: 100%;
   transform: scale(0.9);
-  transition: transform 0.5s; }
+  transition: transform 0.5s !important; }
   @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
     .navigation__link:hover, .navigation__link:active, .navigation__link-language:hover, .navigation__link-language:active {
       transform: none; } }
@@ -778,6 +778,7 @@ a {
   .project__more {
     display: flex;
     justify-content: center;
+    text-align: center;
     padding: 2.6rem 0; }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
       .project__more {
@@ -791,7 +792,8 @@ a {
       font-size: 2.66rem;
       line-height: 1.2;
       font-weight: 900;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: center; }
       @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
         .project__more a {
           font-size: 1.5rem;
