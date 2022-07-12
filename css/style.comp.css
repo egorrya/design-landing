@@ -847,7 +847,7 @@ a {
       left: 50%;
       transform: translate(-50%, -50%); }
     .project__image--50 {
-      flex-basis: 49%;
+      flex-basis: 49.3%;
       aspect-ratio: 1.015/1; }
       @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
         .project__image--50 {
