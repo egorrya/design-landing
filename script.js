@@ -152,8 +152,8 @@ if (popup)
     popupVideo.style.display = 'none';
 
     if (projectOpenPopup) {
-      if (videoInsideHeader.paused) videoInsideHeader.play();
-      if (!videoInsideHeader.muted) videoInsideHeader.muted = true;
+      videoInsideHeader.play();
+      videoInsideHeader.muted = true;
     }
   });
 
