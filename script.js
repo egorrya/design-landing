@@ -152,8 +152,8 @@ if (popup)
     popupVideo.style.display = 'none';
 
     if (projectOpenPopup) {
-      videoInsideHeader.play();
-      videoInsideHeader.muted = true;
+      projectOpenPopup.querySelector('video').play();
+      projectOpenPopup.querySelector('video').muted = true;
     }
   });
 
