@@ -44,7 +44,6 @@ html {
 body {
   position: relative;
   min-height: calc(var(--vh, 1vh) * 100);
-  color: #000;
   line-height: 1.2; }
   body::-webkit-scrollbar {
     display: none; }
@@ -1642,7 +1641,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     filter: grayscale(100%);
-    transition: height 0.5s; }
+    transition: height 0.5s, filter 0.5s; }
     .projects__image--wide {
       height: 133%; }
   .projects__info {

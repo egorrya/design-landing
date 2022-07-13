@@ -81,7 +81,7 @@
 
     filter: grayscale(100%);
 
-    transition: height 0.5s;
+    transition: height 0.5s, filter 0.5s;
 
     &--wide {
       height: 133%;
