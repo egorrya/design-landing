@@ -289,17 +289,17 @@
 
     @include respond(tab-port) {
       flex-basis: 66.15%;
-      margin-top: 0.81rem;
+      margin-top: 1.1vw;
 
       aspect-ratio: 2.04/1;
     }
 
     @include respond(tab-land) {
-      margin-top: 1.2rem;
+      margin-top: 1.1vw;
     }
 
     @include respond(desk) {
-      margin-top: 1vw;
+      margin-top: 1.05vw;
     }
 
     img {
