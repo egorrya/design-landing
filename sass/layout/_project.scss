@@ -83,7 +83,7 @@
       content: '';
       display: inline-block;
       background: no-repeat center url(./../img/play.png);
-      background-size: 10vw;
+      background-size: 7vw;
       animation: fadeIn 3s;
 
       @include respond(tab-port) {

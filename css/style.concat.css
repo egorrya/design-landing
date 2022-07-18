@@ -719,7 +719,7 @@ a {
     content: '';
     display: inline-block;
     background: no-repeat center url(./../img/play.png);
-    background-size: 10vw;
+    background-size: 7vw;
     animation: fadeIn 3s; }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
       .project__main-image.video::before {
@@ -1338,6 +1338,11 @@ a {
         .about__client img {
           max-width: 85%;
           max-height: 3vw; } }
+    .about__client:nth-child(1) img {
+      margin-left: 6.2vw; }
+      @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
+        .about__client:nth-child(1) img {
+          margin-left: auto; } }
     .about__client:nth-child(2) img {
       margin-right: 9vw;
       max-height: 6.9rem; }
@@ -1363,7 +1368,7 @@ a {
     .about__client:nth-child(4) img {
       max-width: 84%;
       max-height: 6rem;
-      margin-left: 4vw; }
+      margin-left: 4.9vw; }
       @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
         .about__client:nth-child(4) img {
           margin-left: auto; } }
@@ -1460,18 +1465,21 @@ a {
           max-height: 4vw;
           max-width: 70%;
           margin-right: 24%; } }
-    @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
-      .about__client:nth-child(10) img {
-        margin-top: 0.5rem; } }
-    @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
-      .about__client:nth-child(10) img {
-        margin-left: 3.1rem; } }
-    @media only screen and (min-width: 75em) {
-      .about__client:nth-child(10) img {
-        margin-top: 0;
-        max-height: 2vw;
-        margin-left: auto;
-        margin-right: auto; } }
+    .about__client:nth-child(10) img {
+      margin-left: 6.5vw; }
+      @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
+        .about__client:nth-child(10) img {
+          margin-top: 0.5rem;
+          margin-left: auto; } }
+      @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
+        .about__client:nth-child(10) img {
+          margin-left: 3.1rem; } }
+      @media only screen and (min-width: 75em) {
+        .about__client:nth-child(10) img {
+          margin-top: 0;
+          max-height: 2vw;
+          margin-left: auto;
+          margin-right: auto; } }
     .about__client:nth-child(11) img {
       margin-right: 8.6vw;
       max-height: 6rem; }

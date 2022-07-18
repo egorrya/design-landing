@@ -380,6 +380,16 @@
       }
     }
 
+    &:nth-child(1) {
+      img {
+        margin-left: 6.2vw;
+
+        @include respond(tab-port) {
+          margin-left: auto;
+        }
+      }
+    }
+
     &:nth-child(2) {
       img {
         margin-right: 9vw;
@@ -419,7 +429,7 @@
         max-width: 84%;
         max-height: 6rem;
 
-        margin-left: 4vw;
+        margin-left: 4.9vw;
 
         @include respond(tab-port) {
           margin-left: auto;
@@ -567,8 +577,11 @@
 
     &:nth-child(10) {
       img {
+        margin-left: 6.5vw;
+
         @include respond(tab-port) {
           margin-top: 0.5rem;
+          margin-left: auto;
         }
 
         @include respond(tab-land) {
