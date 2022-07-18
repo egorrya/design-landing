@@ -92,7 +92,7 @@
 
     &--images {
       padding-top: 0.3rem;
-      padding-left: 0.7rem;
+      // padding-left: 0.7rem;
       max-width: 85%;
 
       @include respond(tab-port) {
@@ -382,6 +382,19 @@
 
     &:nth-child(2) {
       img {
+        margin-right: 9vw;
+        max-height: 6.9rem;
+
+        @include respond(tab-port) {
+          margin-right: auto;
+          max-height: 4rem;
+        }
+
+        @include respond(tab-land) {
+          margin-right: 41%;
+          max-height: 3.85rem;
+        }
+
         @include respond(desk) {
           margin-right: 47%;
           max-height: 3.5vw;
@@ -406,6 +419,12 @@
         max-width: 84%;
         max-height: 6rem;
 
+        margin-left: 4vw;
+
+        @include respond(tab-port) {
+          margin-left: auto;
+        }
+
         @include respond(tab-land) {
           margin-left: 2.5rem;
         }
@@ -422,9 +441,13 @@
         max-width: 84%;
         max-height: 6.7rem;
 
+        margin-right: 8.6vw;
+
         @include respond(tab-port) {
           max-width: 60%;
           max-height: 5rem;
+
+          margin-right: auto;
         }
 
         @include respond(tab-land) {
@@ -464,11 +487,13 @@
 
     &:nth-child(7) {
       img {
-        max-width: 88%;
-        max-height: 5.5rem;
+        max-width: 100%;
+        max-height: 6rem;
+        margin-left: 7vw;
 
         @include respond(tab-port) {
           max-width: 60%;
+          margin-left: 2.6vw;
         }
 
         @include respond(tab-land) {
@@ -489,10 +514,14 @@
     &:nth-child(8) {
       img {
         padding-top: 2rem;
-        max-width: 88%;
+        max-width: 65%;
         max-height: 5.5rem;
 
+        margin-right: 8.6vw;
+
         @include respond(tab-port) {
+          margin-right: auto;
+
           padding-top: 1rem;
           max-width: 70%;
         }
@@ -520,7 +549,7 @@
         @include respond(tab-port) {
           padding-top: 0.8rem;
           max-width: 60%;
-          max-height: 5rem;
+          max-height: 4.5rem;
         }
 
         @include respond(tab-land) {
@@ -558,7 +587,11 @@
 
     &:nth-child(11) {
       img {
+        margin-right: 8.6vw;
+        max-height: 6rem;
+
         @include respond(tab-port) {
+          margin-right: auto;
           margin-top: 0.4rem;
         }
 
