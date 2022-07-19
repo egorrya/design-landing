@@ -713,7 +713,7 @@ a {
     z-index: 2;
     content: '';
     display: inline-block;
-    background: no-repeat center url(./../img/play.png);
+    background: no-repeat 51% url(./../img/play.png);
     background-size: 7vw;
     animation: fadeIn 3s; }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
