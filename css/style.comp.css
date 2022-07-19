@@ -1683,10 +1683,10 @@ a {
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
       .projects__item {
         flex-basis: 32.5%;
-        margin-bottom: 0.75rem; } }
+        margin-bottom: 0.95vw; } }
     @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
       .projects__item {
-        margin-bottom: 1.2rem; } }
+        margin-bottom: 1vw; } }
     @media only screen and (min-width: 75em) {
       .projects__item {
         margin-bottom: 1.17vw; } }

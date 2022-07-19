@@ -25,11 +25,11 @@
 
     @include respond(tab-port) {
       flex-basis: 32.5%;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.95vw;
     }
 
     @include respond(tab-land) {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1vw;
     }
 
     @include respond(desk) {
