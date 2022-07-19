@@ -1,42 +1,51 @@
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
+    visibility: hidden;
     transform: translateX(-50px);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
+    visibility: visible;
   }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    visibility: hidden;
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
 @keyframes fadeInAndDelay {
   0% {
     opacity: 0;
+    visibility: hidden;
   }
 
   33% {
     opacity: 0;
+    visibility: visible;
   }
 
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
 .fade-in {
   opacity: 0;
+  visibility: hidden;
   animation: fadeIn 0.3s 0s forwards;
 }
 
 .opacity-zero {
   opacity: 0;
+  visibility: hidden;
 }
