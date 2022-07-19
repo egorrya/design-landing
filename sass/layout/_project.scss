@@ -18,6 +18,10 @@
     background-color: black;
     overflow: hidden;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @include respond(tab-port) {
       aspect-ratio: 3.07/1;
     }
@@ -28,13 +32,7 @@
 
     img,
     video {
-      position: absolute;
-      height: 100%;
-
-      display: block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      // height: 100%;
 
       @include respond(tab-port) {
         height: auto !important;
