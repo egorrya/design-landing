@@ -1,43 +1,36 @@
-@keyframes fadeInLeft {
+@keyframes fade-in {
   0% {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-50px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    visibility: visible; } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
     visibility: hidden; }
   100% {
-    opacity: 1;
     visibility: visible; } }
 
 @keyframes fadeInAndDelay {
   0% {
-    opacity: 0;
     visibility: hidden; }
   33% {
-    opacity: 0;
     visibility: visible; }
   100% {
-    opacity: 1;
     visibility: visible; } }
 
-.fade-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: fadeIn 0.3s 0s forwards; }
+@keyframes fadeOutAndDelay {
+  1% {
+    opacity: 1;
+    visibility: visible; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
 
-.opacity-zero {
-  opacity: 0;
-  visibility: hidden; }
+.fade-in {
+  visibility: visible !important;
+  animation: fade-in 0.3s 0s forwards; }
+
+.fade-out-and-delay {
+  transition: all 2s;
+  animation: fadeInAndDelay 2s; }
 
 :root {
-  --app-height: 100%; }
+  --app-height: 100%;
+  --animate-delay: 0.3s; }
 
 *,
 *::after,
@@ -442,7 +435,7 @@ a {
   position: relative;
   margin-top: 0rem;
   margin-left: 0.5rem;
-  transition: all 0.3s;
+  transition: transform 0.3s;
   width: 5.3rem;
   height: 5.3rem;
   background-color: #000;
@@ -464,7 +457,7 @@ a {
     content: '';
     position: absolute;
     left: 0;
-    transition: all 0.3s; }
+    transition: transform 0.3s; }
   .navigation__icon::before {
     transform: rotate(-90deg);
     top: 2.4rem; }
@@ -499,7 +492,7 @@ a {
     right: 0;
     background-image: radial-gradient(#000, #000);
     z-index: 1000;
-    transition: opacity 0.2s; }
+    transition: opacity 0.3s; }
   .navigation__nav {
     height: calc(var(--vh, 1vh) * 100);
     width: 100%;
@@ -953,7 +946,7 @@ a {
       font-weight: 900;
       text-transform: uppercase;
       text-align: center;
-      transition: 0.5s; }
+      transition: transform 0.5s; }
       @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
         .project__more a {
           font-size: 1.5rem;
@@ -1002,8 +995,7 @@ a {
     line-height: 1;
     font-weight: 400;
     opacity: 0.85;
-    margin-bottom: 2.4rem;
-    animation: fadeInLeft 0.3s; }
+    margin-bottom: 2.4rem; }
     @media only screen and (min-width: 30em) and (min-device-width: 480px) {
       .home__title {
         font-size: 5.3vw; } }
@@ -1032,12 +1024,6 @@ a {
     @media only screen and (min-width: 75em) {
       .home__title--eng {
         max-width: 50vw; } }
-  .home__button-container {
-    opacity: 0;
-    animation-name: fadeInLeft;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.15s; }
   .home__button {
     color: #000;
     text-decoration: none;
@@ -1097,15 +1083,6 @@ a {
       .about__container {
         padding-left: 3rem;
         padding-right: 3rem; } }
-    .about__container--1 {
-      opacity: 0;
-      animation: fadeIn 0.3s 0s forwards; }
-    .about__container--2 {
-      opacity: 0;
-      animation: fadeIn 0.3s 0.15s forwards; }
-    .about__container--3 {
-      opacity: 0;
-      animation: fadeIn 0.3s 0.3s forwards; }
     .about__container:not(:first-child) {
       margin-top: 5.45rem; }
       @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
@@ -1548,15 +1525,6 @@ a {
   @media only screen and (max-width: 56.25em) and (orientation: landscape) {
     .contact__tab:last-child {
       padding-left: 2.4rem; } }
-  .contact__tab--1 {
-    opacity: 0;
-    animation: fadeIn 0.3s 0s forwards; }
-  .contact__tab--2 {
-    opacity: 0;
-    animation: fadeIn 0.3s 0.15s forwards; }
-  .contact__tab--3 {
-    opacity: 0;
-    animation: fadeIn 0.3s 0.3s forwards; }
   .contact__city {
     font-size: 2.75rem;
     margin-bottom: 1.1rem; }
@@ -1689,7 +1657,6 @@ a {
     aspect-ratio: 1/1;
     margin-bottom: 0.95vh;
     overflow: hidden;
-    opacity: 0;
     visibility: hidden; }
     @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
       .projects__item {

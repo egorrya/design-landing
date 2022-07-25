@@ -239,7 +239,7 @@
     margin-top: 0rem;
     margin-left: 0.5rem;
 
-    transition: all 0.3s;
+    transition: transform 0.3s;
     width: 5.3rem;
     height: 5.3rem;
     background-color: $color-black;
@@ -268,7 +268,7 @@
       content: '';
       position: absolute;
       left: 0;
-      transition: all 0.3s;
+      transition: transform 0.3s;
     }
 
     &::before {
@@ -323,7 +323,7 @@
       background-image: radial-gradient($color-black, $color-black);
       z-index: 1000;
 
-      transition: opacity 0.2s;
+      transition: opacity 0.3s;
     }
 
     &__nav {

@@ -68,7 +68,7 @@
       margin-bottom: 2rem;
     }
 
-    animation: fadeInLeft 0.3s;
+    // animation-duration: 0.5s; /* don't forget to set a duration! */
 
     &--eng {
       @include respond(desk) {
@@ -78,11 +78,11 @@
   }
 
   &__button-container {
-    opacity: 0;
-    animation-name: fadeInLeft;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.15s;
+    // opacity: 0;
+    // animation-name: fadeInLeft;
+    // animation-duration: 0.3s;
+    // animation-fill-mode: forwards;
+    // animation-delay: 0.15s;
   }
 
   &__button {
@@ -121,6 +121,7 @@
     }
 
     transition: transform 0.5s;
+
     &:hover {
       transform: translateX(15px);
     }
