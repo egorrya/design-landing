@@ -179,6 +179,9 @@ a {
       animation: fadeIn 3s; }
       @media only screen and (min-width: 42.5em) {
         .popup__container::before {
+          background-size: 2.5vw; } }
+      @media only screen and (min-width: 75em) {
+        .popup__container::before {
           display: none; } }
   .popup video {
     display: flex;
@@ -729,6 +732,9 @@ a {
     background-size: 7vw;
     animation: fadeIn 3s; }
     @media only screen and (min-width: 42.5em) {
+      .project__main-image.video::before {
+        background-size: 3vw; } }
+    @media only screen and (min-width: 75em) {
       .project__main-image.video::before {
         display: none; } }
   @media only screen and (min-width: 42.5em) {
