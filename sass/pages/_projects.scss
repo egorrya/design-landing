@@ -1,3 +1,5 @@
+$width: 100%;
+
 .projects {
   @include container;
 
@@ -16,16 +18,19 @@
 
   &__item {
     position: relative;
-    display: block;
+    display: inline-block;
 
     flex-basis: 100%;
-    aspect-ratio: 1/1;
+    padding-bottom: 100%;
+
     margin-bottom: 0.95vh;
 
     overflow: hidden;
 
     @include respond(tab-port) {
       flex-basis: 32.5%;
+      padding-bottom: 32.5%;
+
       margin-bottom: 0.95vw;
     }
 

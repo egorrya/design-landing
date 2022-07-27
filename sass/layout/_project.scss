@@ -13,8 +13,12 @@
 
   &__main-image {
     position: relative;
-    aspect-ratio: 1/1;
-    height: 100%;
+
+    // aspect-ratio: 1/1;
+    width: 100%;
+    padding-bottom: 100%;
+    // height: 100%;
+
     background-color: black;
     overflow: hidden;
 
@@ -23,11 +27,13 @@
     align-items: center;
 
     @include respond(tab-port) {
-      aspect-ratio: 3.07/1;
+      // aspect-ratio: 3.07/1;
+      padding-bottom: 32.57%;
     }
 
     @include respond(desk) {
-      aspect-ratio: 3.07/1;
+      // aspect-ratio: 3.07/1;
+      padding-bottom: 32.57%;
     }
 
     img,
@@ -47,6 +53,11 @@
     }
 
     img {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       display: none;
       // @include respond(tab-land) {
       //   display: none;
@@ -54,7 +65,12 @@
     }
 
     video {
-      position: relative;
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
       z-index: 1;
       // display: none;
 
@@ -76,6 +92,9 @@
 
       width: 100%;
       height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       z-index: 2;
       content: '';
@@ -308,15 +327,22 @@
     position: relative;
     margin-top: 1.2vw;
     // background-color: black;
+
     flex-basis: 100%;
-    aspect-ratio: 2.06/1;
+    width: 100%;
+    // aspect-ratio: 2.06/1;
+    padding-bottom: 48.54%;
+
     overflow: hidden;
 
     @include respond(tab-port) {
-      flex-basis: 66.15%;
       margin-top: 1.1vw;
 
-      aspect-ratio: 2.04/1;
+      flex-basis: 66.15%;
+      width: 66.15%;
+      padding-bottom: 32.42%;
+
+      // aspect-ratio: 2.04/1;
     }
 
     @include respond(tab-land) {
@@ -341,10 +367,16 @@
     &--50 {
       // background-color: black;
       flex-basis: 49.3%;
-      aspect-ratio: 1.015/1;
+      width: 49.3%;
+      padding-bottom: 48.57%;
+
+      // aspect-ratio: 1.015/1;
 
       @include respond(tab-port) {
         flex-basis: 32.6%;
+        width: 32.6%;
+
+        padding-bottom: 32.11%;
       }
 
       img {
@@ -355,8 +387,12 @@
 
     &--half {
       @include respond(tab-port) {
-        flex-basis: 49.5%;
-        aspect-ratio: 6.1/4;
+        flex-basis: 49.38%;
+        width: 49.38%;
+
+        padding-bottom: 32.45%;
+
+        // aspect-ratio: 1.525/1;
       }
 
       img {
@@ -373,7 +409,11 @@
     &--full {
       @include respond(tab-port) {
         flex-basis: 100%;
-        aspect-ratio: 3.1/1;
+        width: 100%;
+
+        padding-bottom: 32.25%;
+
+        // aspect-ratio: 3.1/1;
       }
 
       img {
