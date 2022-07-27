@@ -29,21 +29,21 @@
   }
 
   @if $breakpoint==phone-big {
-    @media only screen and (min-width: 30em) and (min-device-width: 480px) {
+    @media only screen and (min-width: 30em) and (min-device-width: 480px) and (max-device-width: 720px) {
       // 480px
       @content;
     }
   }
 
   @if $breakpoint==tab-port {
-    @media only screen and (min-width: 42.5em) and (min-device-width: 680px) {
+    @media only screen and (min-width: 42.5em) {
       // 680px
       @content;
     }
   }
 
   @if $breakpoint==tab-land {
-    @media only screen and (min-width: 56.25em) and (min-device-width: 900px) {
+    @media only screen and (min-width: 56.25em) {
       // 900px
       @content;
     }
